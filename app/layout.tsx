@@ -5,15 +5,18 @@ import "./globals.css";
 const play = Play({
   weight: ["400", "700"],
   variable: "--font-play",
+  subsets: ["latin"],
 });
 
 const pressStart = Press_Start_2P({
   weight: "400",
   variable: "--font-press-start-2p",
+  subsets: ["latin"],
 });
 
 const orbitron = Orbitron({
   variable: "--font-orbitron",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
