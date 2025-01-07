@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Play, Press_Start_2P, Orbitron } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const play = Play({
+  weight: ["400", "700"],
+  variable: "--font-play",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const pressStart = Press_Start_2P({
+  weight: "400",
+  variable: "--font-press-start-2p",
+});
+
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${play.variable} ${pressStart.variable} ${orbitron.variable} max-w-[100%] overflow-x-hidden font-orbitron antialiased`}
       >
         {children}
       </body>

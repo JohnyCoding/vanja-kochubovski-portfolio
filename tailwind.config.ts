@@ -8,9 +8,25 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        play: "var(--font-play)",
+        "press-start": "var(--font-press-start-2p)",
+        orbitron: "var(--font-orbitron)",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          50: "#fafaf9",
+          100: "#f5f5f4",
+          200: "#e7e5e4",
+          500: "#78716c",
+          600: "#57534e",
+          800: "#292524",
+          900: "#1c1917",
+        },
+        accent: "#e11d48",
+      },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },
